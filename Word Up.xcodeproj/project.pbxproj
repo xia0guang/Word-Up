@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		4C79264525B6BC8F00CA31FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C79264325B6BC8F00CA31FD /* Main.storyboard */; };
 		4C79264725B6BC9000CA31FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C79264625B6BC9000CA31FD /* Assets.xcassets */; };
 		4C79264A25B6BC9000CA31FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C79264825B6BC9000CA31FD /* LaunchScreen.storyboard */; };
+		4CE5CCE627002A9D00B452DC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE5CCE527002A9D00B452DC /* CloudKit.framework */; };
+		4CE5CCE827002C0300B452DC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE5CCE727002C0300B452DC /* ViewModel.swift */; };
+		4CE5CCEA27002C5000B452DC /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE5CCE927002C5000B452DC /* Config.swift */; };
+		4CE5CCEC27002D0500B452DC /* WordRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE5CCEB27002D0500B452DC /* WordRecord.swift */; };
+		4CF4CF412648C1C1004B34C1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4CF4CF402648C1C1004B34C1 /* SnapKit */; };
+		4CF4CF432648E1F4004B34C1 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF4CF422648E1F4004B34C1 /* WordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		4C79264625B6BC9000CA31FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C79264925B6BC9000CA31FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C79264B25B6BC9000CA31FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CE5CCE327002A9900B452DC /* Word Up.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Word Up.entitlements"; sourceTree = "<group>"; };
+		4CE5CCE527002A9D00B452DC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		4CE5CCE727002C0300B452DC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4CE5CCE927002C5000B452DC /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		4CE5CCEB27002D0500B452DC /* WordRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordRecord.swift; sourceTree = "<group>"; };
+		4CF4CF422648E1F4004B34C1 /* WordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF4CF412648C1C1004B34C1 /* SnapKit in Frameworks */,
+				4CE5CCE627002A9D00B452DC /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +56,7 @@
 			children = (
 				4C79263C25B6BC8F00CA31FD /* Word Up */,
 				4C79263B25B6BC8F00CA31FD /* Products */,
+				4CE5CCE427002A9D00B452DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +71,28 @@
 		4C79263C25B6BC8F00CA31FD /* Word Up */ = {
 			isa = PBXGroup;
 			children = (
+				4CE5CCE327002A9900B452DC /* Word Up.entitlements */,
 				4C79263D25B6BC8F00CA31FD /* AppDelegate.swift */,
 				4C79263F25B6BC8F00CA31FD /* SceneDelegate.swift */,
 				4C79264125B6BC8F00CA31FD /* ViewController.swift */,
+				4CF4CF422648E1F4004B34C1 /* WordViewController.swift */,
+				4CE5CCE727002C0300B452DC /* ViewModel.swift */,
+				4CE5CCEB27002D0500B452DC /* WordRecord.swift */,
+				4CE5CCE927002C5000B452DC /* Config.swift */,
 				4C79264325B6BC8F00CA31FD /* Main.storyboard */,
 				4C79264625B6BC9000CA31FD /* Assets.xcassets */,
 				4C79264825B6BC9000CA31FD /* LaunchScreen.storyboard */,
 				4C79264B25B6BC9000CA31FD /* Info.plist */,
 			);
 			path = "Word Up";
+			sourceTree = "<group>";
+		};
+		4CE5CCE427002A9D00B452DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CE5CCE527002A9D00B452DC /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +111,9 @@
 			dependencies = (
 			);
 			name = "Word Up";
+			packageProductDependencies = (
+				4CF4CF402648C1C1004B34C1 /* SnapKit */,
+			);
 			productName = "Word Up";
 			productReference = 4C79263A25B6BC8F00CA31FD /* Word Up.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 4C79263125B6BC8F00CA31FD;
+			packageReferences = (
+				4CF4CF3F2648C1C1004B34C1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 4C79263B25B6BC8F00CA31FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +171,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CE5CCE827002C0300B452DC /* ViewModel.swift in Sources */,
 				4C79264225B6BC8F00CA31FD /* ViewController.swift in Sources */,
 				4C79263E25B6BC8F00CA31FD /* AppDelegate.swift in Sources */,
+				4CE5CCEC27002D0500B452DC /* WordRecord.swift in Sources */,
+				4CF4CF432648E1F4004B34C1 /* WordViewController.swift in Sources */,
 				4C79264025B6BC8F00CA31FD /* SceneDelegate.swift in Sources */,
+				4CE5CCEA27002C5000B452DC /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,14 +324,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "Word Up/Word Up.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Word Up/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ray.wu.eureka.Word-Up";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raywu.eureka.Word-Up";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,14 +345,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "Word Up/Word Up.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Word Up/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ray.wu.eureka.Word-Up";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raywu.eureka.Word-Up";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -339,6 +383,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4CF4CF3F2648C1C1004B34C1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4CF4CF402648C1C1004B34C1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CF4CF3F2648C1C1004B34C1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4C79263225B6BC8F00CA31FD /* Project object */;
 }
